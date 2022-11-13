@@ -1,0 +1,154 @@
+\documentclass[14pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{tkz-euclide}
+\usepackage{tikz} 
+\usepackage{pdflscape}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{cancel}
+\usepackage{setspace}
+\pagenumbering{gobble} 
+
+\setlength\parindent{0pt}
+\pgfplotsset{compat=1.16}  
+\usetikzlibrary{arrows.meta}
+
+\begin{document}
+\begin{center}
+    \LARGE{\textbf{Le Proporzioni - Proprietà}}
+\end{center}
+\vspace{1cm}
+Le \textbf{proprietà delle proporzioni} sono:
+\begin{itemize}
+    \item Proprietà fondamentale
+    \item Proprietà dell'invertire
+    \item Proprietà del permutare
+    \item Proprietà del comporre
+    \item Proprietà dello scomporre
+\end{itemize}
+\textbf{Proprietà fondamentale:} in ogni proporzione il prodotto dei medi è sempre uguale al prodotto degli estremi. [Proprietà fondamentale per verificare che una proporzione sia scritta correttamente]\\
+in \textbf{generale:}
+\[se\quad a:b=c:d\]
+\[allora \quad a\cdot d=b\cdot c\]
+Esempio: 
+\[4:6=2:3\]
+\[4\cdot3=12\]
+\[6\cdot2=12\]
+
+\textbf{Proprietà dell'invertire:} Se in una proporzione si scambia ogni antecedente con il proprio conseguente, si ha ancora una proporzione.\\
+in \textbf{generale:}
+\[se\quad a:b=c:d\]
+\[allora \quad b:a=d:c\]
+Esempio:
+\[4:16=2:8\]
+se applico la proprietà:
+\[16:4=8:2\]
+verifico la proporzione:
+\[16\cdot2=32\]
+\[4\cdot8=32\]
+
+\textbf{Proprietà del permutare:} se in una proporzione si scambiano tra loro i due medi, i due estremi o entrambi, si ha ancora una proporzione. \\
+In \textbf{generale:}
+\[se\quad a:b=c:d\]
+\[allora\quad anche\quad a:c=b:d\quad e\quad d:b=c:a\quad e\quad d:c=b:a\]
+Esempio:
+\[16:18=8:9\]
+applico la proprietà: 
+\[16:8=18:9\]
+verifico la proporzione:
+\[8\cdot18=144\]
+\[16\cdot9=144\]
+applico la proprietà: 
+\[9:18=8:16\]
+verifico la proporzione:
+\[18\cdot8=144\]
+\[9\cdot16=144\]
+applico la proprietà: 
+\[9:8=18:16\]
+verifico la proporzione:
+\[8\cdot18=144\]
+\[9\cdot16=144\]
+
+\textbf{Proprietà del comporre:} in una proporzione la somma tra il primo e il secondo termine sta al primo (o al secondo) termine come la somma tra il terzo e il quarto sta al terzo (o al quarto) termine.\\
+In \textbf{generale:}
+\[se\quad a:b=c:d\]
+\[allora\quad(a+b):a= (c+d):c \quad e \quad (a+b):b=(c+d):d\]
+Esempio:\\
+\[4:8=3:6\]
+applico la proprietà:
+\[(4+8):4=(3+6):3\]
+\[12:4=9:3\]
+verifico che la proporzione sia vera:
+\[12\cdot3=36\]
+\[4\cdot9=36\]
+\[-\]
+\[(4+8):8=(3+6):6\]
+\[12:8=9:6\]
+verifico che la proporzione sia vera:
+\[12\cdot6=72\]
+\[8\cdot9=72\]
+
+\textbf{Proprietà dello scomporre:} in una proporzione (avente li antecedenti maggiori dei rispettivi conseguenti) la differenza tra il primo e il secondo termina sta al primo (o al secondo) termine come la differenza tra il terzo e il quarto termine sta al terzo (o al quarto) termine. \\
+In \textbf{generale:}    
+\[se\quad a:b=c:d\ \qquad(a>b \quad e \quad c>d)\]
+\[allora\quad (a+b):a=(c+d):c\]
+Esempio:
+\[18:30=3:5\]
+applico la proprietà:
+\[(30-18):30=(5-3):5\]
+\[12:30=2:5\]
+verifico che la proporzione sia vera:
+\[30\cdot2=60\]
+\[12\cdot5=60\]
+\[-\]
+\[(30-18):30=(5-3):5\]
+\[12:18=2:3\]
+verifico che la proporzione sia vera:
+\[18\cdot2=36\]
+\[12\cdot3=36\]
+\clearpage
+\textbf{Esercizi}\\
+Applicando la \textbf{proprietà fondamentale} stabilisci se le seguenti scritture sono proporzioni:\\
+\begin{spacing}{2.1}
+\begin{minipage}[t]{0.5\textwidth}
+\(55:5=33:3\)\\
+\(44:56=60:76\)\\
+%\(44:55=16:20\)\\
+%\(32:15=10:5\)\\
+\(1,1:0,5=2,8:0,6\)\\
+\(2,4:3,2=1,5:2\)\\
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\(\dfrac{3}{4}:\dfrac{1}{2}=\dfrac{4}{5}:\dfrac{8}{15}\)\\
+\(\dfrac{3}{5}:\dfrac{4}{3}=\dfrac{1}{8}:\dfrac{5}{18}\)\\
+%\(\dfrac{3}{10}:\dfrac{10}{3}=\dfrac{3}{4}:\dfrac{4}{3}\)\\
+%\(\dfrac{1}{2}:\dfrac{4}{3}=\dfrac{7}{8}:\dfrac{3}{7}\)\\
+\(\dfrac{4}{7}:\dfrac{1}{5}=\dfrac{3}{7}:\dfrac{3}{20}\)\\
+\end{minipage}
+\end{spacing}
+Applica la \textbf{proprietà dell'invertire} alle seguenti proporzioni e verifica che sia proporzioni corrette (usa la proprietà fondamentale):\\
+\begin{minipage}[t]{0.5\textwidth}
+\(18:72=26:104\)\\
+\(150:25=234:39\)\\
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\(1,6:5,4=2,2:7,425\)\\
+\(7,75:6,2=0,5:0,4\)\\
+\end{minipage}
+Applica la \textbf{proprietà del permutare} in tutti i modi possibili alle seguenti proporzioni e verifica che sia proporzioni corrette (usa la proprietà fondamentale):\\
+\(25:35=5:7\)\\
+\(50:30=25:15\)\\
+
+Applica la \textbf{proprietà del comporre} alle seguenti proporzioni e verifica che sia proporzioni corrette (usa la proprietà fondamentale):\\
+\(64:16=24:6\)\\
+\(54:72=18:24\)\\
+
+Applica la \textbf{proprietà dello scomporre} alle seguenti proporzioni e verifica che sia proporzioni corrette (usa la proprietà fondamentale):\\
+\(39:3=78:6\)\\
+\(16:11=80:55\)\\
+
+
+
+
+\end{document}

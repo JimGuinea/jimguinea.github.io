@@ -1,0 +1,229 @@
+\documentclass[14pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{tkz-euclide}
+\usepackage{tikz} 
+\usepackage{pdflscape}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+\begin{center}
+    \LARGE{\textbf{Esercitazione 1 geometria - 23/09/2022 - 3B}}
+\end{center}
+\vspace{1cm}
+\textbf{Ricopia sul quaderno le figure (col righello!!!) e i dati, trova le informazioni richieste e scrivi sotto ogni figura il nome.}\vspace{1.5cm}\\
+
+%----- FINE CONSEGNA -----
+
+%parallelogramma
+\begin{minipage}{0.25\linewidth}
+\textbf{1)}
+\begin{tikzpicture}[scale=1.1]
+    %initialisation
+    \tkzInit[xmin=0,xmax=4,ymin=0,ymax=2] 
+    \tkzClip[space=.5] 
+    %definitions
+    \tkzDefPoint(0,0){A} 
+    \tkzDefPoint(3,0){B} 
+    \tkzDefPoint(4,2){C} 
+    \tkzDefPoint(1,0){H}
+    \tkzDefPointWith[colinear= at C](B,A) \tkzGetPoint{D}
+    %drawing
+    \tkzDrawPolygon(A,B,C,D)
+    %\tkzDrawSegments[blue,dashed](A,C B,D)
+    %label
+    \tkzLabelPoints[below](A,B,H)
+    \tkzLabelPoints[above](C,D)
+    \tkzDrawSegments[style=dashed](D,H)
+    %\tkzLabelSegment[above,pos=.7,sloped](A,C){$x+y$}
+    %\tkzLabelSegment[above,pos=.7,sloped](B,D){$x-y$}
+\end{tikzpicture}
+\end{minipage}
+\hspace{0.7cm}
+\begin{minipage}{0.25\linewidth}
+$\overline{AB}=5cm$\\
+$\overline{BC}=3cm$\\
+$2p=?$
+\end{minipage}
+% triangolo isoscele
+\begin{minipage}{0.25\textwidth}
+\textbf{2)}
+\begin{tikzpicture}[rotate=-30]
+    \tkzDefPoint(2,3){A}
+    \tkzDefShiftPoint[A](0:4){B}
+    \tkzDefShiftPoint[A](30:4){C}
+    \tkzDefMidPoint(B,C)
+    \tkzGetPoint{H}
+    \tkzDrawSegments(A,B B,C C,A)
+    \tkzMarkSegments[mark=|](A,B A,C)
+    \tkzDrawPoints(A,B,C,H)
+    \tkzLabelPoints[right](B,C, H)
+    \tkzLabelPoints[above left](A)
+    \tkzDrawSegments[style=dashed](A,H)
+\end{tikzpicture}
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}{0.25\textwidth}
+$\overline{AB}=4cm$\\
+$\overline{BC}=2cm$\\
+$A=3.8cm^2$\\
+$altezza=?$\\
+$2p=?$
+\end{minipage}
+\vspace{1.5cm}
+
+%triangolo equilatero
+\begin{minipage}{0.25\linewidth}
+\textbf{3)}
+\begin{tikzpicture}[scale=1]
+    \tkzDefPoint(2,3){A}
+    \tkzDefShiftPoint[A](30:3){B}
+    \tkzDefShiftPoint[A](-30:3){C}
+    \tkzDefMidPoint(B,C)
+    \tkzGetPoint{H}
+    \tkzDrawPolygon(A,B,C)
+    \tkzDrawPoints(A,B,C,H)
+    \tkzLabelPoints[right](B,C, H)
+    \tkzLabelPoints[left](A)
+    %\tkzMarkSegments[mark=|](A,B A,C B,C)
+    \tkzDrawSegments[style=dashed](A,H)
+\end{tikzpicture}
+\end{minipage}
+\begin{minipage}{0.25\linewidth}
+    $\overline{AB}=5cm$\\
+    $altezza=?$\\
+    $2p=?$
+\end{minipage}
+\begin{minipage}{0.25\linewidth}
+\textbf{4)}
+%quadrato
+\hspace{0.5cm}
+\begin{tikzpicture}[scale=1, rotate=20]
+    \tkzDefPoints{0/0/A,2/0/B,2/2/C,0/2/D}
+    \tkzDrawPolygon(A,...,D)
+    \tkzDrawPoints(A,...,D)
+    \tkzLabelPoints[below](A,B)
+    \tkzLabelPoints[above](C,D)
+\end{tikzpicture}
+\end{minipage}
+\begin{minipage}{0.25\linewidth}
+    $\overline{AB}=7cm$\\
+    $area=?$\\
+    $2p=?$   
+\end{minipage}
+
+\vspace{1.5cm}
+\begin{minipage}{0.25\linewidth}
+\textbf{5)}
+%trapezio isoscele
+\begin{tikzpicture}[scale=1, rotate=-200]
+    \tkzDefPoints{0/0/A,4/0/B,3/2/C,1/2/D}
+    \tkzDrawPolygon(A,...,D)
+    \tkzDrawPoints(A,...,D)
+    \tkzDefMidPoint(B,C)
+    \tkzDefPointBy[projection=onto B--A](C) \tkzGetPoint{H} %ALTEZZA
+    \tkzDrawSegments[style=dashed](C,H)
+    \tkzLabelPoints[above right](A,B,H)
+    \tkzLabelPoints[below left](C,D)
+\end{tikzpicture}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}{0.25\linewidth}
+    $altezza=3cm$\\
+    $\overline{AB}=10cm$\\
+    $\overline{CD}=6cm$\\
+    $\overline{CB}=4cm$\\
+    $area=?$\\
+    $2p=?$   
+\end{minipage}
+\begin{minipage}{0.25\linewidth}
+\textbf{6)}
+%trapezio isoscele 2
+\begin{tikzpicture}[scale=1, rotate=-50]
+    \tkzDefPoints{0/0/A,4/0/B,3/2/C,0/2/D}
+    \tkzDrawPolygon(A,...,D)
+    \tkzDrawPoints(A,...,D)
+    \tkzDefMidPoint(B,C)
+    \tkzDefPointBy[projection=onto B--A](C) \tkzGetPoint{H} %ALTEZZA
+    \tkzDrawSegments[style=dashed](C,H)
+    \tkzLabelPoints[above left](A,D)
+    \tkzLabelPoints[right](C,B)
+    \tkzLabelPoints[left](H)
+\end{tikzpicture}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}{0.25\linewidth}
+    $\overline{AB}=12cm$\\
+    $\overline{CD}=8cm$\\
+    $area=48cm^2$\\
+    $\overline{CB}=\frac{3}{2}\overline{DA}$\\
+    $altezza=?$\\
+    $\overline{Bh}=?$\\
+    $2p=?$   
+\end{minipage}
+
+% --------- SOLUZIONI
+
+\newpage
+\begin{center}\textbf{Soluzioni}\\\end{center}
+\textbf{Es 1}:\\
+La figura è un parallelogramma, per calcolare il perimetro è sufficiente sommare i 4 lati secondo la formula generale:
+$$\overline{AB}+\overline{BC}+\overline{CD}+\overline{DA}=2p$$
+Visto che nel parallelogramma i lati opposti sono uguali si può scrivere in maniera più sintetica:
+$$2\cdot\overline{AB}+2\cdot\overline{BC}=2p$$
+E sostituendo ai segmenti i valori riportati nei dati si ha: $$2\cdot5cm+2\cdot3cm=16cm$$
+%  es 2
+\textbf{Es 2:}\\
+La figura è un triangolo isoscele, ovvero ha due lati (\(\overline{AB}\) e \(\overline{AC}\)) congruenti (di uguale lunghezza).\\
+Per trovare il perimetro si applica la formula:
+$$\overline{AB}+\overline{AC}+\overline{BC}=2p$$
+Oppure in maniera più sintetica:
+$$2\cdot\overline{AB}+\overline{BC}=2p$$
+E sostituendo ai segmenti i valori riportati nei dati si ha: $$ 2\cdot4cm +2cm=10cm$$
+Per quanto riguarda il calcolo della \textit{altezza} si può o passare attraverso il \textit{Teorema di Pitagora} [che a questo punto dell'anno non abbiamo ancora ripassato, ma visto che è un argomento che avete affrontato lo scorso anno chi vuole può utilizzarlo] oppure si può ricavare dalla formula dell'area conoscendo l'altezza:
+$$A_{triangolo}=\frac{base\cdot altezza}{2}$$
+$$altezza=\frac{2\cdot A}{base}$$
+quindi nel nostro caso:
+$$altezza=\frac{2\cdot 3,8cm^2}{2cm}=3,8cm$$
+\textbf{Es 3}\\
+La figura è un triangolo equilatero (tutti e 3 i lati uguali (e di conseguenza anche gli angoli) ). Il perimetro si trova sommando i 3 lati:\\ $$\overline{AB}+\overline{BC}+\overline{CD}=2p$$
+$$5cm+5cm+5cm=15cm$$
+oppure:
+$$\overline{AB}\cdot3=2p$$
+$$5cm\cdot3=15cm$$
+Per trovare l'altezza si può procedere in due modi: o utilizzando il \textit{Teorema di Pitagora} [che a questo punto dell'anno non abbiamo ancora ripassato] oppure utilizzando la \textit{Formula di Erone} per trovare l'area e poi da quest'ultima ricavare l'altezza.
+Formula di Erone: $A_{triangolo}=\sqrt{p\cdot(p-a)\cdot (p-b)\cdot(p-c)}$ dove $p$ è il semiperimetro (metà del perimetro), $a\,b\,c$ sono le lunghezze dei lati del triangolo. Nel nostro caso diventa:
+$$A_{triangolo}=\sqrt{p\cdot(p-\overline{AB})\cdot(p-\overline{BC})\cdot(p-\overline{CA})}$$
+$$\sqrt{7,5cm\cdot(7,5cm-5cm)\cdot(7,5cm-5cm)\cdot(7,5cm -5cm)}=10,82cm^2$$
+Da qui applicando la formula inversa per l'altezza ricavata nell'esercizio 2 si ha:
+$$altezza=\frac{2\cdot 10,82cm^2}{5cm}=4,33cm$$
+\\
+\textbf{Es 4:}
+\\La figura è un quadrato, per trovare il perimetro si possono sommare i 4 lati:
+$$2p=\overline{AB}+\overline{BC}+\overline{CD}+\overline{DA}$$
+$$7cm+7cm+7cm+7cm=28cm$$
+Oppure in maniera più sintetica:
+$$2p=\overline{AB}\cdot4=7cm\cdot 4= 28cm$$
+Per quanto riguarda l'area invece si applica la formula:
+$$A_{quadrato}=lato\cdot lato=lato^2=7cm\cdot7cm=28cm^2$$
+\newpage
+\textbf{Es 5:}\\
+La figura è un trapezio isoscele (lati obliqui congruenti), per trovare il perimetro si sommano i lati (come per il quadrato e il rettangolo):
+$$2p=10cm+4cm+6cm+4cm=10cm+2\cdot4cm+6cm=24cm$$
+Per calcolare l'area bisogna applicare la formula:
+$$A_{trapezio}=\frac{(B+b)\cdot h}{2}$$
+Dove $B$ è la base maggiore e $b$ la base minore.
+$$A_{trapezio}=\frac{(\overline{AB}+\overline{CD})\cdot \overline{CH}}{2}=\frac{(10cm+6cm)\cdot 3cm}{2}=24cm^2$$
+\\\textbf{Es 6:}\\
+La figura è un trapezio rettangolo (angolo retto tra base e lato). Per calcolare il perimetro è necessario conoscere, oltre ai dati forniti dal problema, anche il lato $\overline{DA}$ (che è anche congruente all'altezza) e il lato $\overline{CB}$ (che però dipende da $\overline{DA}$) quindi utilizzando l'area si può ricavare l'altezza e quindi il lato $\overline{DA}$:
+$$A_{trapezio}=\frac{(B+b)\cdot h}{2}$$
+$$h=\frac{A\cdot2}{(B+b)}=\frac{48cm^2 \cdot 2}{(12cm+8cm)}=4,8cm$$
+Trovata l'altezza e quindi il lato $\overline{DA}$ si può calcolare il lato $\overline{CB}$:
+$$\overline{CB}=\frac{3}{2}\overline{DA}$$
+$$\overline{CB}=\frac{3}{2}\cdot4,8cm=\frac{3\cdot 4,8cm}{2}=7,2cm$$
+Trovati tutti i lati si possono calcolare perimetro e area come nell'esercizio 5.
+\end{document}
+
+% Fare scritte più grosse, il probelma del trapezio rettangolo ha un problema sulle misure delle due basi, la parte tra il lato obliquo e h risulta troppo piccola rispetto alla base minore
+
+

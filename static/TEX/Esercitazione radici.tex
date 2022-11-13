@@ -1,0 +1,72 @@
+\documentclass[14pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{tkz-euclide}
+\usepackage{tikz} 
+\usepackage{pdflscape}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{setspace}
+\setlength\parindent{0pt}
+
+%\def\tabularxcolumn#1{m{#1}} %allinea testo al centro
+
+\begin{document}
+\begin{table}
+    %\caption{Operazioni tra numeri frazionari}
+    \begin{tabular}{|m{0.5\linewidth}|m{0.5\linewidth}|}
+        \hline
+        \multicolumn{2}{|c|}{\large{\textbf{Proprietà delle radici}}}\\
+        \hline
+        \multicolumn{2}{|p{0.9\textwidth}|}{\[\sqrt[b]{a}=c \hspace{1cm} c^b=a   \hspace{1cm} \sqrt[2]{9}=3 \hspace{1cm} 3^2=9 \]}\\
+        \hline
+        \hline
+        \textbf{Teoria} & \textbf{Esempio }\\
+        \hline
+        \( \mathbf{\sqrt[b]{a\cdot c}=\sqrt[b]{a}\cdot\sqrt[b]{c}}\) & \[\sqrt[2]{3\cdot 2}=\sqrt[2]{3}\cdot\sqrt[2]{2}\]\\
+        \hline
+        \(\mathbf{\sqrt[b]{a:c}=\sqrt[b]{a}:\sqrt[b]{c}}\) & \[\sqrt[2]{3: 2}=\sqrt[2]{3}:\sqrt[2]{2}\]\\
+        \hline
+        \(\mathbf{(\sqrt[b]{a})^c=\sqrt[b]{a^c}}\) & \[(\sqrt[2]{3})^4=\sqrt[2]{3^4}\]\\
+        \hline
+        \(\sqrt[c]{\sqrt[b]{a}}=\sqrt[c\cdot b]{a}\) & \[\sqrt[2]{\sqrt[3]{4}}=\sqrt[2\cdot 3]{4}=\sqrt[6]{4}\]\\
+        \hline
+        \(a\cdot\sqrt[b]{c}=\sqrt[b]{a^b\cdot c}\)& \[2\cdot\sqrt[3]{4}=\sqrt[3]{2^3\cdot 4}\] \\
+        \hline
+        \hline
+         \end{tabular}
+\end{table}
+         
+\clearpage
+
+
+\textbf{Applica le proprietà delle radici per trovare il valore delle seguenti radici, semplifica il più possibile il radicando:}\\
+Esempio:\[(\sqrt[2]{3})^4=\sqrt[2]{3^4}=\sqrt[2]{3^2\cdot3^2}=\sqrt[2]{3^2}\cdot\sqrt[2]{3^2}=3\cdot3=9\]
+\begin{spacing}{3}
+%\vspace{.2cm}
+%proprietà 1 e 4
+\begin{minipage}[t]{0.5\textwidth}
+\(\sqrt[2]{3\cdot4}=\)\\
+\(\sqrt[2]{5}\cdot\sqrt[2]{7}=\)\\
+\(\sqrt[2]{7:16}=\)\\
+\(\dfrac{2\cdot\sqrt[3]{4}}{\sqrt[3]{32}}=\)\\ 
+\(\dfrac{\sqrt[3]{2^3\cdot 4}}{\sqrt[2]{2}}=\)\\
+\(\dfrac{\sqrt[2]{3^2\cdot 5}}{\sqrt[2]{81}}=\)\\
+\(\dfrac{2^4}{\sqrt[4]{8^4\cdot 16}}=\)\\
+\(\dfrac{\sqrt[2]{9\cdot 25}}{2+\sqrt[2]{9}}=\)\\
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\(2\cdot\sqrt[2]{7}=\)\\
+\(\sqrt[2]{15\cdot9}=\)\\
+\(\sqrt[2]{108}=\)\\ 
+\(\sqrt[3]{40}=\)\\
+\(\sqrt[4]{112}=\)\\
+\(\dfrac{(\sqrt[2]{2})^3}{\sqrt[2]{16}}=\)\\
+\(\dfrac{(\sqrt[2]{3})^4}{\sqrt[2]{63}}=\)\\
+\(\dfrac{\sqrt[2]{6}\cdot\sqrt[2]{2}}{\sqrt[2]{16}}=\)
+\end{minipage}
+\end{spacing}
+\end{document}
+
+

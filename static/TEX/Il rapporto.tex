@@ -1,0 +1,130 @@
+\documentclass[14pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{tkz-euclide}
+\usepackage{tikz} 
+\usepackage{pdflscape}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{cancel}
+\usepackage{setspace}
+
+\setlength\parindent{0pt}
+\pgfplotsset{compat=1.16}  
+\usetikzlibrary{arrows.meta}
+
+\begin{document}
+\begin{center}
+    \LARGE{\textbf{Il Rapporto}}
+\end{center}
+\vspace{1cm}
+\textbf{Definizione:} \textit{Il rapporto tra due valori numerici è costituito dal loro quoziente; se \(a\) e \(b\) sono i \textbf{termini} del rapporto, il primo termine si chiama \textbf{antecedente}, il secondo si chiama \textbf{conseguente}.}\\
+
+
+Il rapporto si indica con:
+\[a:b \quad b\neq0\]
+oppure
+\[\dfrac{a}{b} \quad b\neq0\]
+
+\(a\) è l'\textbf{antecedente} e \(b\) il \textbf{conseguente}.\\
+
+\textbf{A cosa servono i rapporto, esempio 1.}\\
+I rapporti possono essere utili per comprendere meglio la realtà. Per esempio: \textit{è più bravo un giocatore che in 2 partite segna 4 goal o un giocatore che in 6 partite ne segna 10?} Per rispondere a questa domanda si può \textbf{calcolare il rapporto} tra i gol segnati e le partite giocate (quindi il rapporto \(\dfrac{goal}{partite}\) o \(goal:partite\)):\\
+giocatore 1: \(\dfrac{4goal}{2partite}=2\dfrac{goal}{partita}\)\\
+
+giocatore 2: \(\dfrac{10goal}{6partite}=1,7\dfrac{goal}{partita}\)\\
+
+Nonostante il giocatore 2 abbia fatto più goal (in valore assoluto) del giocatore 1, però \textbf{in rapporto} alle partite giocate ha fatto peggio del giocatore 2.\\
+
+\fbox{\begin{minipage}{1\textwidth}\textbf{Domanda:} perché per valutare la bravura del giocatore è stato scelto il rapporto \(goal:partite\) e non \(partite:goal\)? Se il rapporto scelto si può interpretare come \textit{"numero di goal fatti a partita"}, cosa significa il rapporto inverso?\end{minipage}}\\
+
+Il \textbf{rapporto inverso} di due numeri si ottiene invertendo l'antecedente con il conseguente. Quindi se il nostro rapporto è:
+\[\dfrac{a}{b}\]
+il suo \textbf{inverso} è
+\[\dfrac{b}{a}\]
+In numeri se ho il rapporto \(\dfrac{3}{4}\) il suo \textbf{inverso} è \(\dfrac{4}{3}\).\\
+Se moltiplico un rapporto per il suo inverso, il risultato è 1:
+\[\dfrac{3}{4}\cdot\dfrac{4}{3}=\dfrac{\textcolor{blue}{\cancel3}}{\textcolor{red}{\cancel4}}\cdot\dfrac{\textcolor{red}{\cancel4}}{\textcolor{blue}{\cancel3}}=1\]
+
+\fbox{\begin{minipage}{1\textwidth}\textbf{Proprietà fondamentale del rapporto:} \textit{moltiplicando o dividendo l'antecedente ed il conseguente per uno stesso numero, diverso da 0, si ottiene un \textbf{rapporto equivalente} a quello dato.}\\
+Per esempio consideriamo il rapporto tra i numeri 20 e 4
+\[20:4=5\]
+Se moltiplichiamo l'antecedente e il conseguente per lo stesso numero, diverso da 0, per esempio 3, otteniamo:
+\[(20\cdot3):(4\cdot3)=60:12=5\]
+Il valore del rapporto non cambia, 5 era prima e 5 è adesso.\\
+Se invece dividiamo antecedente e conseguente per lo stesso numero, sempre diverso da 0, per esempio 2, otteniamo:Esercitazione geometria Teorema
+\[(20:2):(4:2)=10:2=5\]
+Anche in questo caso il valore del rapporto è identico ai rapporti precedenti.
+\end{minipage}}\\
+\vspace{0.5cm}
+\begin{center}
+    \large{\textbf{Il Rapporto tra grandezze}}
+\end{center}
+
+Quando si fa il rapporto tra due numeri che hanno ognuno una unità di misura si sta facendo un \textbf{rapporto tra grandezze}. Per esempio sono rapporti tra grandezze:
+\begin{itemize}
+    \item l'età tra due persone: Marco ha il triplo degli anni di Luca
+    \item il rapporto tra lo spazio percorso e il tempo impiegato: il ciclista ha percorso 40km in 2 ore
+\end{itemize}
+Si dice che due grandezze sono \textbf{omogenee} se hanno la stessa unità di misura (rapporto tra le età di due persone espresse in anni), mentre sono \textbf{non omogenee} se non hanno la stessa unità di misura (spazio percorso e tempo impiegato [\(km/h\)]).\\
+Il rapporto tra due grandezze omogenee è un \textbf{numero puro}, ovvero non ha unità di misura.\\
+Per esempio se si vuole calcolare il rapporto tra un'area di \(15cm^2\) e un'area di \(3cm^2\) si ottiene:
+\[\dfrac{15cm^2}{3cm^2}=\dfrac{15\cancel{cm^2}}{3\cancel{cm^2}}=\dfrac{15}{3}=\dfrac{5}{1}=5\]
+Se il rapporto ottenuto è un \textbf{numero naturale} o \textbf{razionale} si dice che le due grandezze sono \textbf{commensurabili}, ovvero hanno un \textbf{sottomultiplo comune} (come nel caso precedente in cui il sottomultiplo (o divisore) in comune a 15 e 3 è 3 stesso [\(15:3=5\) e \(3:3=1\)]). \\
+Se invece vado a calcolare il rapporto tra la lunghezza della diagonale di un quadrato, con lato \(2cm\) e il lato stesso del quadrato ottengo (ricordo che la diagonale di un quadrato di lato \(l\) è \(l\sqrt{2}\)):
+\[\dfrac{diagonale}{lato}=\dfrac{2\sqrt{2}cm}{2cm}=\dfrac{2\sqrt{2}\cancel{cm}}{2\cancel{cm}}=\dfrac{2\sqrt{2}}{2}=\dfrac{\cancel{2}\sqrt{2}}{\cancel2}=\dfrac{\sqrt{2}}{1}=\sqrt{2}\]
+Il numero ottenuto \textbf{non è} ne un numero naturale (in quanto \(\sqrt{2}\) ha una parte decimale [per altro illimitata e non periodica]) ne un numero \textbf{razionale} (poiché per la definizione di numero razionale il numeratore e il denominatore devono essere numeri naturali e \(\sqrt{2}\) non lo è). \\
+In questo caso si dice che le \textbf{due grandezze} sono \textbf{incommensurabili}, ovvero non hanno un sottomultiplo in comune. 
+
+Il rapporto tra due grandezze \textbf{non omogenee} da origine ad una \textbf{grandezza derivata}. Se riprendiamo l'esempio di poco fa, dove si rapportavano tra di loro lo spazio percorso da un ciclista (\(40km\)) e il tempo impiegato (2 ore, ovvero \(2h\)) si ottiene una grandezza derivata, cioè la \textbf{velocità}:
+\[\dfrac{40km}{2h}=\dfrac{20km}{1h}=20km/h\]
+\clearpage
+
+\large{\textbf{Esercizi}}\\
+1)Per ogni rapporto scrivi almeno due rapporti equivalenti:\\
+\begin{minipage}[t]{0.5\textwidth}
+    \(4:6\)\\
+    \(10:8\)\\
+    \(90:20\)\\
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+    \begin{spacing}{2.1}
+    \(\dfrac{8}{6}\)\\
+    \(\dfrac{15}{3}\)\\
+    \(\dfrac{4}{9}\)\\
+    \end{spacing}
+\end{minipage}
+2)Dei seguenti rapporti indica il rapporto inverso:\\
+\begin{minipage}[t]{0.5\textwidth}
+    \(6:4\)\\
+    \(12:7\)\\
+    \(23:45\)\\
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+    \begin{spacing}{2.1}
+    \(\dfrac{1}{2}\)\\
+    \(\dfrac{7}{4}\)\\
+    \(\dfrac{42}{17}\)\\
+    \end{spacing}
+\end{minipage}
+3)Fai 3 esempi della vita quotidiana di rapporti tra misure non omogenee.\\
+
+\newpage
+4)Prendi un foglio A4 (un foglio di stampante o una pagina del tuo quaderno), misura il lato lungo, il lato corto e fai il rapporto. Dividi il foglio in due partendo dal lato lungo (taglialo o traccia la linea di mezzo con un lapis o penna), misura il lato lungo e il lato corto di uno dei due rettangoli ottenuti dividendo il foglio a metà e fai il rapporto. Cosa puoi notare? Ottieni lo stesso risultato sei utilizzi i rapporti inversi?\\
+
+5)Il rombo in figura è stato ottenuto accostando due \textbf{triangoli equilateri}, calcola il rapporto tra le lunghezze delle diagonali e il rapporto inverso.\\ \small{\textit{[Si, non hai le misure dei lati, non è un errore. Scegli tu una misura per il lato. Se usi misuri differenti il risultato cambia? Prova!]}} \\
+\hspace{0.5cm}
+\begin{tikzpicture}[scale=1, rotate=0]
+    \tkzDefPoints{2/0/A,4/1/D,0/1/B,2/2/C,2/1/O}
+    \tkzDrawPolygon(A,...,D)
+    \tkzDrawPoints(A,...,D)
+    \tkzLabelPoints[below](A)
+    \tkzLabelPoints[right](D)
+    \tkzLabelPoints[left](B)
+    \tkzLabelPoints[above](C)
+    \tkzLabelPoints[below right](O)
+    \tkzDrawSegments[style=dashed](A,C)
+    \tkzDrawSegments[style=dashed](B,D)
+\end{tikzpicture}
+
+\end{document}

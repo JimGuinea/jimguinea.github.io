@@ -1,0 +1,71 @@
+\documentclass[14pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{tkz-euclide}
+\usepackage{tikz} 
+\usepackage{pdflscape}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{makecell}
+\pagenumbering{gobble} % leva il numero della pagina
+\setlength\parindent{0pt}
+
+\pgfmathsetseed{\number\pdfrandomseed}
+\newcommand*{\NewNumbers}{%
+  \pgfmathsetmacro{\A}{random(0,10)}
+  \pgfmathsetmacro{\B}{random(0,100)}}
+
+\pgfmathsetseed{\number\pdfrandomseed}
+\newcommand*{\NM}{%
+  \pgfmathsetmacro{\C}{random(Alla faccia della bassezza raggiunta in tv... 0,100)}
+  \pgfmathsetmacro{\D}{random(0,100)}}
+
+\pgfmathsetseed{\number\pdfrandomseed}
+\newcommand*{\MN}{%
+  \pgfmathsetmacro{\E}{random(0,1000)}
+  \pgfmathsetmacro{\F}{random(0,1000)}}
+
+\title{Esercitazione su moltiplicazioni e divisioni per 10 100 1000}
+\date{ }
+
+\begin{document}
+\begin{table}
+%\small\addtolength{\tabcolsep}{-5pt}
+    \begin{tabular}{|m{0.4\textwidth}|m{0.6\textwidth}|}
+        \multicolumn{2}{m{1\linewidth}}{\textbf{Esercitazione sulle espressioni}}\\
+        \hline
+        \hline
+        \textbf{Regola}& \textbf{Esempi}\\
+        \hline
+        Tra somma, divisione, moltiplicazione e prodotto, prima si fanno prodotto e moltiplicazione, poi somma e differenza&\makecell{\textbf{SI}\hspace{1cm}\(6+8:2=6+4=10\) \\ \textbf{NO}\hspace{1cm}\(6+8:2=14:2=7\)}\\
+        \hline
+        Se si ha una espressione con prodotto e divisione si fa prima l'operazione a più a sinistra &\makecell{\textbf{SI}\hspace{1cm}\(10:5\cdot2=2\cdot2=4\) \\ \textbf{NO}\hspace{1cm}\(10:5\cdot2=10:10=1\)}\\
+        \hline
+        In una espressione dove sono presenti le parentesi, prima si esegue l'operazione tra parentesi \(()\), poi quella tra \([]\) e infine \(\{ \}\) &\makecell{\[ \{[(2+3)\cdot4]:2\}=\{[5\cdot4]:2\}=\{20:2\}=10 \]}\\
+        \hline
+        \hline
+    \end{tabular}
+\end{table}
+
+\clearpage
+\begin{spacing}{1.5}
+\(5+2:2=\)\\
+\(10:2+8=\)\\
+\(7+5-3+2=\)\\
+\(7*2:7=\)\\
+\((10+2):6=\)\\
+\(7+3\cdot5:15-6\cdot5:10=\)
+\(2\cdot9:3+7\cdot3+5-8\cdot2+7\cdot3-15:3=\)
+\(\{[7\cdot(2+1)-2\cdot3]:(1+2)\}-[(3\cdot2+5)-10]=\)
+\end{spacing}
+
+
+%----- FINE CONSEGNA -----
+
+
+\end{document}
+
+% Fare scritte più grosse, il probelma del trapezio rettangolo ha un problema sulle misure delle due basi, la parte tra il lato obliquo e h risulta troppo piccola rispetto alla base minore
+
+

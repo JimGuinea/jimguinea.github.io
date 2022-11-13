@@ -1,0 +1,96 @@
+\documentclass[14pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{tkz-euclide}
+\usepackage{tikz} 
+\usepackage{pdflscape}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{setspace}
+
+%\def\tabularxcolumn#1{m{#1}} %allinea testo al centro
+
+\begin{document}
+\begin{table}
+    %\caption{Operazioni tra numeri frazionari}
+    \begin{tabular}{|m{0.3\linewidth}|m{0.3\linewidth}|m{0.4\linewidth}|}
+        \hline
+        \multicolumn{3}{|c|}{\large{\textbf{Proprietà delle radici}}}\\
+        \hline
+        \multicolumn{3}{|p{0.9\textwidth}|}{\textbf{La radice di un numero è l'operazione inversa all'elevamento a potenza}, ovvero: \[\sqrt[b]{a}=c \hspace{1cm} c^b=a   \hspace{1cm} \sqrt[2]{9}=3 \hspace{1cm} 3^2=9 \] Dove \(a\) è il \textbf{radicando} e \(b\) è \textbf{l'indice} della radice.}\\
+        \hline
+        \hline
+         & \textbf{Teoria} & \textbf{Esempio }\\
+        \hline
+        \( \mathbf{\sqrt[b]{a\cdot c}=\sqrt[b]{a}\cdot\sqrt[b]{c}}\)& Il prodotto di due numeri sotto radice è uguale al prodotto della radice del primo numero per la radice del secondo numero & \[\sqrt[2]{3\cdot 2}=\sqrt[2]{3}\cdot\sqrt[2]{2}\]\\
+        \hline
+        \(\mathbf{\sqrt[b]{a:c}=\sqrt[b]{a}:\sqrt[b]{c}}\)& Il rapporto (divisione) di due numeri sotto radice è uguale alla divisione della radice del primo numero per la radice del secondo numero & \[\sqrt[2]{3: 2}=\sqrt[2]{3}:\sqrt[2]{2}\]\\
+        \hline
+        \(\mathbf{(\sqrt[b]{a})^c=\sqrt[b]{a^c}}\)& Una radice elevata ad un esponente è uguale al radicando elevato all'esponente & \[(\sqrt[2]{3})^4=\sqrt[2]{3^4}\]\\
+        \hline
+        \(\sqrt[c]{\sqrt[b]{a}}=\sqrt[c\cdot b]{a}\)& La radice di una radice è uguale alla radice con esponente il prodotto dei due esponenti & \[\sqrt[2]{\sqrt[3]{4}}=\sqrt[2\cdot 3]{4}=\sqrt[6]{4}\]\\
+        \hline
+        \(a\cdot\sqrt[b]{c}=\sqrt[b]{a^b\cdot c}\)& Per portare all'interno di una radice un numero che moltiplica la radice stessa, il numero prende come esponente l'indice della radice& \[2\cdot\sqrt[3]{4}=\sqrt[3]{2^3\cdot 4}\] \\
+        \hline
+        \hline
+        \multicolumn{3}{|p{1\textwidth}|}{Dopo che avremo affrontato i \textbf{numeri relativi} torneremo sulle proprietà delle radici}\\
+        \hline
+        \hline
+         
+         \end{tabular}
+\end{table}
+         
+\clearpage
+
+\begin{spacing}{1.5}
+\textbf{Applica le proprietà delle radici per trovare il valore delle seguenti radici, semplifica il più possibile il radicando:}\\
+Esempio:\[(\sqrt[2]{3})^4=\sqrt[2]{3^4}=\sqrt[2]{3^2\cdot3^2}=\sqrt[2]{3^2}\cdot\sqrt[2]{3^2}=3\cdot3=9\]
+%\vspace{.2cm}
+%------- prima proprietà
+\begin{minipage}[t]{0.5\textwidth}
+\(\sqrt[2]{34\cdot 1}=\)\\
+\(\sqrt[3]{5\cdot 3}=\)\\
+\(\sqrt[2]{8\cdot 2}=\)\\
+\(\sqrt[2]{3\cdot 12}=\)\\
+\(\sqrt[2]{21\cdot 2}=\)\\
+\(\sqrt[2]{3}\cdot\sqrt[2]{2}=\)\\
+\(\sqrt[2]{5}\cdot\sqrt[2]{5}=\)\\
+\(\sqrt[6]{8}\cdot\sqrt[6]{2}=\)\\
+\(\sqrt[2]{7}\cdot\sqrt[2]{5}=\)\\
+\(\sqrt[4]{4}\cdot\sqrt[4]{6}=\)\\
+\(\sqrt[2]{9}\cdot\sqrt[2]{4}=\)\\
+%------- seconda proprietà
+\(\sqrt[2]{16:36}=\)\\
+\(\sqrt[2]{25:2}=\)\\
+\(\sqrt[2]{9:4}=\)\\
+\(\sqrt[5]{15:6}=\)\\
+\(\sqrt[3]{27: 8}=\)\\
+\(\sqrt[2]{3: 2}=\)\\
+%------- terza proprietà
+\((\sqrt[2]{3})^4=\)\\
+\((\sqrt[2]{2})^3=\)\\
+\((\sqrt[3]{3})^4=\)\\
+\((\sqrt[4]{4})^2=\)\\
+\((\sqrt[2]{4})^9=\)
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+%----- quarta proprietà
+\(\sqrt[2]{\sqrt[3]{4}}=\)\\
+\(\sqrt[3]{\sqrt[2]{36}}=\)\\
+\(\sqrt[4\cdot 2]{64}=\)\\
+\(\sqrt[2\cdot 3]{4}=\)\\
+%------- quinta proprietà
+\(2\cdot\sqrt[3]{4}=\)\\
+\(3\cdot\sqrt[2]{5}=\)\\
+\(4\cdot\sqrt[8]{2}=\)\\
+\(3\cdot\sqrt[4]{2}=\)\\
+\(\sqrt[3]{2^3\cdot 4}=\) \\
+\(\sqrt[2]{3^2\cdot 5}=\) \\
+\(\sqrt[4]{8^4\cdot 16}=\) \\
+\(\sqrt[2]{9\cdot 25}=\) \\
+\end{minipage}
+\end{spacing}
+\end{document}
+
+

@@ -1,0 +1,135 @@
+\documentclass[14pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{tkz-euclide}
+\usepackage{tikz} 
+\usepackage{pdflscape}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{setspace}
+\setlength\parindent{0pt}
+\graphicspath{ {./img/} }
+
+%\def\tabularxcolumn#1{m{#1}} %allinea testo al centro
+
+\begin{document}
+\begin{table}
+    %\caption{Operazioni tra numeri frazionari}
+    \begin{tabular}{|m{0.5\linewidth}|m{0.5\linewidth}|}
+        \hline
+        \multicolumn{2}{|c|}{\large{\textbf{Proprietà delle radici}}}\\
+        \hline
+        %\multicolumn{2}{|p{0.9\textwidth}|}{\[\sqrt[b]{a}=c \hspace{1cm} c^b=a   \hspace{1cm} \sqrt[2]{9}=3 \hspace{1cm} 3^2=9 \]}\\
+        \hline
+        \textbf{Teoria} & \textbf{Esempio }\\
+        \hline
+        \( \mathbf{\sqrt[b]{a\cdot c}=\sqrt[b]{a}\cdot\sqrt[b]{c}}\) & \[\sqrt[2]{3\cdot 2}=\sqrt[2]{3}\cdot\sqrt[2]{2}\]\\
+        \hline
+        \(\mathbf{\sqrt[b]{a:c}=\sqrt[b]{a}:\sqrt[b]{c}}\) & \[\sqrt[2]{3: 2}=\sqrt[2]{3}:\sqrt[2]{2}\]\\
+        \hline
+        \(\mathbf{(\sqrt[b]{a})^c=\sqrt[b]{a^c}}\) & \[(\sqrt[2]{3})^4=\sqrt[2]{3^4}\]\\
+        \hline
+        \(\sqrt[c]{\sqrt[b]{a}}=\sqrt[c\cdot b]{a}\) & \[\sqrt[2]{\sqrt[3]{4}}=\sqrt[2\cdot 3]{4}=\sqrt[6]{4}\]\\
+        \hline
+        \(a\cdot\sqrt[b]{c}=\sqrt[b]{a^b\cdot c}\)& \[2\cdot\sqrt[3]{4}=\sqrt[3]{2^3\cdot 4}\] \\
+        \hline
+        \hline
+        \multicolumn{2}{|c|}{\large{\textbf{Proprietà delle potenze}}}\\
+        \hline
+        %\multicolumn{2}{|p{0.9\textwidth}|}{\[a^3=a\cdot a\cdot a \hspace{1cm} a^5=a\cdot a\cdot a \cdot a\cdot a\]}\\
+        \hline
+        \textbf{Teoria} & \textbf{Esempio }\\
+        \hline
+        \(\mathbf{a^b\cdot a^d= a^{(b+c)}}\)& \[2^3\cdot2^2\cdot2^5=2^{(3+2+5)}=2^{10}\]\\
+        \hline
+        \vspace{2mm}
+        \(\mathbf{a^b:a^c= a^{(b-c)}}\) & \[2^6:2^2:2^1=2^{(6-2-1)}=2^{3}  \]  \[3^8:3^2:3^5=3^{(8-2-5)}=2^{10} \]\\
+        \hline
+        \(\mathbf{(a^b)^c=a^{(b\cdot c)}} \) & \[(2^3)^4=2^{(3\cdot 4)}=2^{12}\] \\  
+        \hline
+        \(\mathbf{a^c\cdot b^c=(a\cdot b)^c}\) & \[2^3\cdot 3^3=(2\cdot 3)^3=6^3\]\\ \hline
+        \(\mathbf{a^c: b^c=(a: b)^c}\) & \[4^3:2^3=(4:2)^3=2^3\]\\ 
+        \hline
+        %\multicolumn{2}{|p{0.3\textwidth}|}{\textbf{Casi particolari:}}& \[a^0=1\hspace{1cm} (a\neq0)\] \[0^a=0\hspace{1cm}  (a\neq0)\] \[0^0=indeterminato\]\[a^{-b}=\frac{b}{a}\] \[a^{\frac{b}{c}}=\sqrt[c]{a^b}\]\\
+        \hline
+        \end{tabular}
+
+\end{table}
+         
+\clearpage
+
+\begin{table}
+    %\caption{Operazioni tra numeri frazionari}
+    \begin{tabular}{|m{0.4\linewidth}|m{0.6\linewidth}|}
+        \hline
+        \multicolumn{2}{|c|}{\large{\textbf{Operazioni tra frazioni}}}\\
+        \hline
+        %\multicolumn{2}{|p{0.9\textwidth}|}{\[\sqrt[b]{a}=c \hspace{1cm} c^b=a   \hspace{1cm} \sqrt[2]{9}=3 \hspace{1cm} 3^2=9 \]}\\
+        \hline
+        \textbf{Operazione} & \textbf{Esempio }\\
+        \hline
+        Somma (\textbf{mcm}) & \[\dfrac{2}{3}+\dfrac{3}{4}=\dfrac{(4\cdot2)+(3\cdot3)}{\textbf{12}}=\dfrac{8+9}{12}=\dfrac{17}{12}\]\\
+        \hline
+        Differenza (\textbf{mcm}) & \[\dfrac{5}{2}-\dfrac{2}{3}=\dfrac{(3\cdot5)-(2\cdot2)}{\textbf{6}}=\dfrac{15-4}{6}=\dfrac{11}{6}\]\\
+        \hline
+        Prodotto (\textbf{semplificazione in croce)} & \[\dfrac{3}{4}\cdot\dfrac{6}{8}=\dfrac{3}{\textcolor{red}{4}}\cdot\dfrac{\textcolor{red}{6}}{8}=\dfrac{3}{\textcolor{red}{2}}\cdot\dfrac{\textcolor{red}{3}}{8}=\dfrac{3\cdot4}{2\cdot8}=\dfrac{12}{16}=\dfrac{12:4}{16:4}=\dfrac{3}{4}\]\\
+        \hline
+        Divisione (\textbf{moltiplicare la prima per l'inverso della seconda)}& \[\dfrac{1}{3}:\dfrac{\textcolor{red}{2}}{\textcolor{blue}{9}}=\dfrac{1}{3}\cdot\dfrac{\textcolor{blue}{9}}{\textcolor{red}{2}}=\dfrac{1}{\textcolor{orange}{3}}\cdot\dfrac{\textcolor{orange}{9}}{2}=\dfrac{1}{\textcolor{orange} {1}}\cdot\dfrac{\textcolor{orange}{3}}{2}=\dfrac{1\cdot3}{1\cdot2}=\dfrac{3}{2}\]\\
+        \hline
+        \hline
+    \end{tabular}
+\end{table}
+\begin{center}
+\includegraphics[width=0.6\textwidth]{tavola_periodica.jpg}
+\end{center}
+\clearpage
+\begin{spacing}{2.2}
+\begin{minipage}[t]{0.5\textwidth}
+    \(\dfrac{1}{4}+\dfrac{1}{6}=\)\\
+    \(\dfrac{2}{3}+\dfrac{2}{8}=\)\\
+    \(\dfrac{3}{5}-\dfrac{3}{2}=\)\\
+    \(\dfrac{11}{16}-\dfrac{5}{8}=\)\\
+    \(\dfrac{9}{8}\cdot\dfrac{4}{6}=\)\\
+    \(\dfrac{22}{7}\cdot\dfrac{35}{2}=\)\\
+    \(\dfrac{21}{8}\cdot\dfrac{16}{7}=\)\\
+    \(\dfrac{2}{7}:\dfrac{8}{14}=\)\\
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+    \(\dfrac{12}{5}:\dfrac{36}{35}=\)\\
+    \((5^4\cdot5^2)^2=\)\\
+    \((4^7:4^1)^2=\)\\
+    \((9^6\cdot9:9^5)^5:(8^4)^3=\)\\
+    \(1^{2}\cdot1^9=\)\\
+    \(\{[(5^2:5)^2]^3\}^0=\)\\
+    \((5^4:5^2\cdot5)^3=\)\\
+\end{minipage}
+\end{spacing}
+\begin{spacing}{2}
+\begin{minipage}[t]{0.5\textwidth}
+%radici\\
+\(\sqrt[2]{3\cdot4}=\)\\
+\(\sqrt[2]{5}\cdot\sqrt[2]{7}=\)\\
+\(\sqrt[2]{7:16}=\)\\
+\(\sqrt[4]{\sqrt[2]{8}}\)=\\
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+%radici\\
+\(2\cdot\sqrt[2]{7}=\)\\
+\(\sqrt[2]{15\cdot9}=\)\\
+\(\sqrt[2]{108}=\)\\ 
+\((\sqrt[3]{3})^3=\)\\
+%\(\sqrt[3]{40}=\)\\
+%\(\sqrt[4]{112}=\)\\
+\end{minipage}
+\end{spacing}
+\begin{spacing}{3}
+\begin{minipage}[t]{0.5\textwidth}
+    \(\dfrac{2^2\cdot3^2}{\sqrt[2]{36}}:\dfrac{12}{\sqrt[2]{36}}=\)\\
+    \(\dfrac{\sqrt[2]{6}\cdot\sqrt[2]{2}}{\sqrt[2]{16}}\cdot\dfrac{4}{\sqrt[2]{3}}=\)\\
+    \(\dfrac{\sqrt[2]{9\cdot 25}}{2+\sqrt[2]{9}}:\dfrac{\sqrt[2]{60}}{4^2}=\)\\
+\end{minipage}
+\end{spacing}
+\end{document}
+
+

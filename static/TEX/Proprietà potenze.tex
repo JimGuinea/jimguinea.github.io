@@ -1,0 +1,69 @@
+\documentclass[14pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{tkz-euclide}
+\usepackage{tikz} 
+\usepackage{pdflscape}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{setspace}
+\pagenumbering{gobble}
+\setlength\parindent{0pt}
+
+
+%\def\tabularxcolumn#1{m{#1}} %allinea testo al centro
+
+\begin{document}
+\begin{table}
+    %\caption{Operazioni tra numeri frazionari}
+    \begin{tabular}{|m{0.2\linewidth}|m{0.4\linewidth}|m{0.4\linewidth}|}
+        \hline
+        \multicolumn{3}{|c|}{\large{\textbf{Proprietà delle potenze}}}\\
+        \hline
+        \multicolumn{3}{|p{0.9\textwidth}|}{\textbf{La potenza di un numero è il prodotto di tanti fattori uguali a quel numero quanti ne indica l'esponente}, ovvero: \[a^3=a\cdot a\cdot a \hspace{1cm} a^5=a\cdot a\cdot a \cdot a\cdot a\]In \(a^b\) \(a\) è chiamata \textbf{base} mentre \(c\) è chiamato \textbf{esponente}}\\
+        \hline
+        \hline
+        \textbf{Condizione} & \textbf{Teoria} & \textbf{Esempio }\\
+        \hline
+        \(\mathbf{a^b\cdot a^d= a^{(b+c)}}\)& Se si \textbf{moltiplicano} due o più numeri con la stessa base (e esponenti uguali o diversi) il risultato è un numero con la stessa base e come esponenti la somma degli esponenti & \[2^3\cdot2^2\cdot2^5=2^{(3+2+5)}=2^{10}\]\\
+        \hline
+        \vspace{2mm}
+        \(\mathbf{a^b:a^c= a^{(b-c)}}\)& Se si \textbf{dividono} due o più numeri con la stessa base (e esponenti uguali o diversi) il risultato è un numero con la stessa base e come esponenti la differenza degli esponenti & \[2^6:2^2:2^1=2^{(6-2-1)}=2^{3}  \]  \[3^8:3^2:3^5=3^{(8-2-5)}=2^{10} \]\\
+        \hline
+        \(\mathbf{(a^b)^c=a^{(b\cdot c)}} \) & Una base \textbf{elevata} ad un esponente ed \textbf{elevata} nuovamente ad un esponente è uguale alla base stessa elevata al prodotto dei due esponenti & \[(2^3)^4=2^{(3\cdot 4)}=2^{12}\] \\  
+        \hline
+        \(\mathbf{a^c\cdot b^c=(a\cdot b)^c}\) & La \textbf{moltiplicazione} tra due \textbf{basi diverse} ma con \textbf{stesso esponente} è uguale al prodotto delle basi elevato all'esponente & \[2^3\cdot 3^3=(2\cdot 3)^3=6^3\]\\ \hline
+        \(\mathbf{a^c: b^c=(a: b)^c}\) & La \textbf{divisione} tra due \textbf{basi diverse} ma con \textbf{stesso esponente} è uguale al rapporto delle basi elevato all'esponente & \[4^3:2^3=(4:2)^3=2^3\]\\ 
+        \hline
+        \multicolumn{2}{|p{0.3\textwidth}|}{\textbf{Casi particolari:}}& \[a^0=1\hspace{1cm} (a\neq0)\] \[0^a=0\hspace{1cm}  (a\neq0)\] \[0^0=indeterminato\]\[a^{-b}=\frac{b}{a}\] \[a^{\frac{b}{c}}=\sqrt[c]{a^b}\]\\
+        \hline
+         \end{tabular}
+\end{table}
+\clearpage
+
+%-------  DA RICONTROLLARE SOPRATUTTO QUELLI CON GLI ESPONENTI NEGATIVI 
+%
+
+\begin{spacing}{1.5}
+Esercizi:\\
+\((5^3\cdot5^6)^2=\)\\
+\((5^6:5^3)^2=\)\\
+\((8^6\cdot8^4:8^2)^5:(8^4)^3=\)\\
+%\([6^{18}:(6^2)^3]^3:[(6^8)^5:6^5]=\)\\
+\(3^3\cdot4^3=\)\\
+\(12^2:(2^5:2^3)^2=\)\\
+%\((4^8\cdot5^8\cdot3^8):[(4^9\cdot5^9\cdot3^9)^5:(4^6\cdot5^6\cdot3^6)]=\)\\
+\(7^2-2^2\cdot3-7^0=\)\\
+\(1^{36}\cdot36^1=\)\\
+\((6^6:6^2)^2=\)\\
+\((5^6:5^3\cdot6)^2=\)\\
+%\((8^2\cdot8^4:8^2)^5:(8^4)^{7}=\)\\
+%\([16^{18}\cdot(16^2)^3]^3:[(2^8)^5\cdot2^5]=\)\\
+\(3^3\cdot4^3:6^3=\)\\
+\(12^{4}:(2^5:2^3)^2=\)\\
+\(7^2+2^2\cdot3-0^7=\)\\
+\end{spacing}
+\end{document}
+
+
